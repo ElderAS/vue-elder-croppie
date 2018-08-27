@@ -1,0 +1,45 @@
+{
+  "name": "vue-elder-croppie",
+  "version": "0.0.0-development",
+  "description": "Image cropping component for vue-elder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElderAS/vue-elder-croppie.git"
+  },
+  "keywords": [
+    "image",
+    "cropping",
+    "vue",
+    "elder"
+  ],
+  "author": "carsten@elder.no",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ElderAS/vue-elder-croppie/issues"
+  },
+  "homepage": "https://github.com/ElderAS/vue-elder-croppie#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.2",
+    "@fortawesome/free-solid-svg-icons": "^5.2.0",
+    "@fortawesome/vue-fontawesome": "^0.1.1",
+    "croppie": "^2.6.2",
+    "vue-elder-button": "^1.1.1",
+    "vue-elder-defaults": "^1.0.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
+    "semantic-release": "^15.9.11",
+    "travis-deploy-once": "^5.0.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
