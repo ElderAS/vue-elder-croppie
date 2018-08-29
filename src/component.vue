@@ -194,7 +194,7 @@ $vue-elder-croppie--background: #eaeaea !default;
     color: black;
   }
 
-  &-container {
+  .croppie-container {
     display: flex;
     flex-direction: column;
 
