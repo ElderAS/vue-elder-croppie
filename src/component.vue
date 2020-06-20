@@ -173,7 +173,7 @@ export default {
   justify-content: center;
   align-items: center;
 
-  background-color: var(--vue-elder-croppie-background);
+  background-color: GetVariable("croppie-background");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -188,11 +188,11 @@ export default {
 
   &-button {
     $size: 30px;
-    background-color: var(--vue-elder-primary);
-    color: var(--vue-elder-primary-contrast);
+    background-color: GetVariable("primary");
+    color: GetVariable("primary-contrast");
     border: none;
     outline: none;
-    border-radius: var(--vue-elder-border-radius);
+    border-radius: GetVariable("border-radius");
     font: inherit;
 
     display: flex;
@@ -203,8 +203,8 @@ export default {
     height: $size;
 
     &--error {
-      background-color: var(--vue-elder-error);
-      color: var(--vue-elder-error-contrast);
+      background-color: GetVariable("error");
+      color: GetVariable("error-contrast");
     }
 
     & + & {
