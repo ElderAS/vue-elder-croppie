@@ -166,45 +166,49 @@ export default {
 }
 
 .elder__croppie {
-  width: 100%;
   position: relative;
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
+  width: 100%;
 
   background-color: GetVariable("croppie-background");
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
 
   &-actions {
-    display: flex;
     position: absolute;
-    bottom: 1em;
-    right: 1em;
     z-index: 2;
+    right: 1em;
+    bottom: 1em;
+
+    display: flex;
   }
 
   &-button {
     $size: 30px;
-    background-color: GetVariable("primary");
-    color: GetVariable("primary-contrast");
-    border: none;
-    outline: none;
-    border-radius: GetVariable("border-radius");
+
     font: inherit;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     width: $size;
     height: $size;
 
+    color: GetVariable("primary-contrast");
+    border: none;
+    border-radius: GetVariable("border-radius");
+    outline: none;
+    background-color: GetVariable("primary");
+
     &--error {
-      background-color: GetVariable("error");
       color: GetVariable("error-contrast");
+      background-color: GetVariable("error");
     }
 
     & + & {
@@ -214,15 +218,18 @@ export default {
 
   &-upload {
     position: absolute;
+
     visibility: hidden;
   }
 
   &-placeholder {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
+
     text-align: center;
+
     color: black;
   }
 
@@ -232,6 +239,7 @@ export default {
 
     .cr-boundary {
       flex-grow: 1;
+
       height: auto;
     }
   }
