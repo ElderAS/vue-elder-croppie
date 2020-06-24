@@ -158,11 +158,16 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./main";
+$variables: (
+  "primary": #3a9acd,
+  "primary-contrast": white,
+  "error": #e83b35,
+  "error-contrast": white,
+  "border-radius": 3px,
+);
 
-:root {
-  @include GenerateVariables();
-  @include GenerateVariable("croppie-background", #eaeaea);
+@function GetVariable($key) {
+  @return var(--vue-elder-#{$key}, map-get($variables, $key));
 }
 
 .elder__croppie {
